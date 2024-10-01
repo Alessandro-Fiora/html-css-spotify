@@ -232,6 +232,16 @@ a {
   padding: 10px 20px;
 }
 
+/* APP CONTENT MAIN */
+
+.app-content-main .label-list {
+  text-align: center;
+}
+
+.app-content-main .label-item {
+  text-transform: uppercase;
+}
+
 /* PLAYER */
 
 #player {
