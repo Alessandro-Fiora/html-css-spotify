@@ -234,6 +234,21 @@ a {
 
 /* APP CONTENT MAIN */
 
+.app-content-main {
+  color: grey;
+  padding: 1rem;
+}
+
+.app-content-main h1,
+.app-content-main h2,
+.app-content-main h3 {
+  color: white;
+}
+
+.app-content-main section {
+  margin: 1rem 0;
+}
+
 /* LABELS */
 
 .app-content-main .label-list {
@@ -249,18 +264,20 @@ a {
 .app-content-main .card-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
 }
 
 .app-content-main .card {
-  flex-basis: 50%;
-  gap: 1rem;
+  flex-basis: 40%;
+  flex-grow: 1;
 }
 
 /* CREATED FOR YOU SECTION */
 
 /* POPULAR ARTISTS SECTION */
 
-.card img {
+.popular-artists .card img {
   border-radius: 50%;
 }
 
@@ -341,6 +358,10 @@ a {
   }
 
   /* **************** ---------------- *************************** */
+
+  .app-content-main .card {
+    flex-basis: 20%;
+  }
 }
 
 /* LG */
@@ -365,4 +386,8 @@ a {
   }
 
   /* **************** ---------------- *************************** */
+
+  .app-content-main .card {
+    flex-basis: 10%;
+  }
 }
