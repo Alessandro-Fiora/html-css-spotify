@@ -89,10 +89,6 @@ a {
   color: white;
 }
 
-#sidebar .fa-plus:hover {
-  /* background-color: currentColor; */
-}
-
 /* APP TOP */
 
 .app-top {
@@ -146,6 +142,8 @@ a {
   flex-grow: 1;
 
   width: 100%;
+
+  overflow-y: auto;
 }
 
 .sidebar-upper i {
@@ -169,6 +167,8 @@ a {
 
   max-height: 300px;
   overflow-y: auto;
+
+  flex-grow: 1;
 }
 
 .playlist-title {
@@ -211,6 +211,25 @@ a {
   font-weight: bold;
   color: white;
   font-size: 0.9rem;
+}
+
+/* APP CONTENT */
+
+/* APP CONTENT HEADER */
+
+.app-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.app-content-header .upgrade {
+  color: white;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  border-radius: 25px;
+
+  padding: 10px 20px;
 }
 
 /* PLAYER */
