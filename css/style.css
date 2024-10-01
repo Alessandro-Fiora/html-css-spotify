@@ -234,12 +234,34 @@ a {
 
 /* APP CONTENT MAIN */
 
+/* LABELS */
+
 .app-content-main .label-list {
   text-align: center;
 }
 
 .app-content-main .label-item {
   text-transform: uppercase;
+}
+
+/* RECENTLY PLAYED SECTION */
+
+.app-content-main .card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-content-main .card {
+  flex-basis: 50%;
+  gap: 1rem;
+}
+
+/* CREATED FOR YOU SECTION */
+
+/* POPULAR ARTISTS SECTION */
+
+.card img {
+  border-radius: 50%;
 }
 
 /* PLAYER */
