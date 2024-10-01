@@ -1,0 +1,108 @@
+/* CUSTOM PROPERTIES */
+
+:root {
+  --player-height: 75px;
+  --sidebar-width: 50px;
+  --page-content-header-height: 75px;
+}
+
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* DEBUG */
+
+.debug * {
+  background-color: brown;
+  border: 1px dashed black;
+  padding: 10px;
+}
+
+/* PAGE */
+
+.page {
+  height: calc(100% - var(--player-height));
+
+  display: flex;
+}
+
+.page-content-container {
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* PAGE CONTENT HEADER */
+
+.page-content-header {
+  height: var(--page-content-header-height);
+
+  background-color: hsl(213.33deg 29.03% 6.08%);
+}
+
+/* PAGE CONTENT MAIN */
+
+.page-content-main {
+  height: calc(100% - var(--page-content-header-height));
+
+  overflow-y: auto;
+
+  background-color: hsl(218.57deg 25.93% 10.59%);
+}
+
+/* SIDEBAR */
+
+#sidebar {
+  width: var(--sidebar-width);
+
+  overflow-y: auto;
+
+  background-color: black;
+}
+
+/* PLAYER */
+
+#player {
+  height: var(--player-height);
+
+  background-color: hsl(0deg 0% 15.69%);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 768px) {
+  :root {
+    --sidebar-width: 200px;
+  }
+}
