@@ -8,13 +8,13 @@
     <title>Spotify</title>
 
     <!-- FONT AWESOME -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    /> -->
+    />
 
     <!-- MY CSS -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -22,13 +22,55 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="page">
-        <div id="sidebar"></div>
-        <div class="page-content-container">
-          <header class="page-content-header"></header>
-          <main class="page-content-main"></main>
+      <!-- APP UPPER -->
+      <div class="app-top">
+        <!-- SIDEBAR -->
+        <nav id="sidebar" class="">
+          <!-- SIDEBAR UPPER -->
+          <div class="sidebar-upper">
+            <!-- LOGO -->
+            <div class="logo-container">
+              <img
+                class="d-sm-none"
+                src="./img/logo-small.svg"
+                alt="logo-small"
+              />
+              <img
+                class="d-none d-sm-block"
+                src="./img/logo.svg"
+                alt="logo-small"
+              />
+            </div>
+            <!-- NAV LINKS -->
+            <ul class="nav-link-list">
+              <li class="nav-link-item">
+                <a href="#">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="d-none d-sm-inline"> Home</span>
+                </a>
+              </li>
+              <li class="nav-link-item">
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass"></i>
+                  <span class="d-none d-sm-inline"> Cerca</span>
+                </a>
+              </li>
+              <li class="nav-link-item">
+                <a href="#"
+                  ><i class="fa-solid fa-lines-leaning fa-flip-horizontal"></i>
+                  <span class="d-none d-sm-inline"> La tua libreria</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-lower"></div>
+        </nav>
+        <div class="app-content-container">
+          <header class="app-content-header"></header>
+          <main class="app-content-main"></main>
         </div>
       </div>
+      <!-- PLAYER SECTION -->
       <div id="player"></div>
     </div>
   </body>

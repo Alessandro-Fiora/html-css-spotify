@@ -1,9 +1,9 @@
 /* CUSTOM PROPERTIES */
 
 :root {
-  --player-height: 75px;
+  --player-height: 100px;
   --sidebar-width: 50px;
-  --page-content-header-height: 75px;
+  --app-content-header-height: 100px;
 }
 
 /* # RESET */
@@ -30,6 +30,26 @@ a {
 
 /* UTILS */
 
+/* **************** DISPLAY CLASSES *************************** */
+
+.d-inline {
+  display: inline;
+}
+.d-block {
+  display: block;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+
+/* **************** ---------------- *************************** */
+
 .container {
   margin: 0 auto;
   padding: 0 10px;
@@ -51,30 +71,30 @@ a {
   padding: 10px;
 }
 
-/* PAGE */
+/* APP TOP */
 
-.page {
+.app-top {
   height: calc(100% - var(--player-height));
 
   display: flex;
 }
 
-.page-content-container {
+.app-content-container {
   width: calc(100% - var(--sidebar-width));
 }
 
-/* PAGE CONTENT HEADER */
+/* APP CONTENT HEADER */
 
-.page-content-header {
-  height: var(--page-content-header-height);
+.app-content-header {
+  height: var(--app-content-header-height);
 
   background-color: hsl(213.33deg 29.03% 6.08%);
 }
 
-/* PAGE CONTENT MAIN */
+/* APP CONTENT MAIN */
 
-.page-content-main {
-  height: calc(100% - var(--page-content-header-height));
+.app-content-main {
+  height: calc(100% - var(--app-content-header-height));
 
   overflow-y: auto;
 
@@ -89,6 +109,7 @@ a {
   overflow-y: auto;
 
   background-color: black;
+  color: grey;
 }
 
 /* PLAYER */
@@ -101,8 +122,78 @@ a {
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 768px) {
+/* SM */
+
+@media screen and (min-width: 576px) {
+  /* **************** DISPLAY CLASSES *************************** */
+
+  .d-sm-inline {
+    display: inline;
+  }
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-inline-block {
+    display: inline-block;
+  }
+  .d-sm-flex {
+    display: flex;
+  }
+  .d-sm-none {
+    display: none;
+  }
+
+  /* **************** ---------------- *************************** */
+
   :root {
     --sidebar-width: 200px;
   }
+}
+
+/* MD */
+
+@media screen and (min-width: 768px) {
+  /* **************** DISPLAY CLASSES *************************** */
+
+  .d-md-inline {
+    display: inline;
+  }
+  .d-md-block {
+    display: block;
+  }
+  .d-md-inline-block {
+    display: inline-block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-none {
+    display: none;
+  }
+
+  /* **************** ---------------- *************************** */
+}
+
+/* LG */
+
+@media screen and (min-width: 992px) {
+  /* **************** DISPLAY CLASSES *************************** */
+
+  .d-lg-inline {
+    display: inline;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-inline-block {
+    display: inline-block;
+  }
+  .d-lg-flex {
+    display: flex;
+  }
+  .d-lg-none {
+    display: none;
+  }
+
+  /* **************** ---------------- *************************** */
 }
