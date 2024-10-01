@@ -104,12 +104,19 @@ a {
 /* SIDEBAR */
 
 #sidebar {
+  display: flex;
+  flex-direction: column;
+
   width: var(--sidebar-width);
 
   overflow-y: auto;
 
   background-color: black;
   color: grey;
+}
+
+.sidebar-upper {
+  flex-grow: 1;
 }
 
 /* PLAYER */
