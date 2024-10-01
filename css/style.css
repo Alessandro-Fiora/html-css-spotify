@@ -106,8 +106,10 @@ a {
 #sidebar {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   width: var(--sidebar-width);
+  padding: 5px 10px;
 
   overflow-y: auto;
 
@@ -117,6 +119,35 @@ a {
 
 .sidebar-upper {
   flex-grow: 1;
+
+  width: 100%;
+}
+
+.sidebar-upper i {
+  font-size: 1.3rem;
+}
+
+.nav-link-list .nav-link-item {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.sidebar-lower {
+  width: 100%;
+
+  text-align: center;
+}
+
+.sidebar-lower .app-install {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-lower .user {
+  margin-top: 0.5rem;
+}
+
+.fa-circle-user {
+  font-size: 1.5rem;
 }
 
 /* PLAYER */
@@ -152,8 +183,24 @@ a {
 
   /* **************** ---------------- *************************** */
 
+  /* OVERRIDE */
+
   :root {
     --sidebar-width: 200px;
+  }
+
+  /* SIDEBAR */
+
+  #sidebar {
+    align-items: flex-start;
+  }
+
+  .nav-link-list .nav-link-item {
+    text-align: left;
+  }
+
+  .sidebar-lower {
+    text-align: left;
   }
 }
 
