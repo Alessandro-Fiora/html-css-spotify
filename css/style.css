@@ -94,6 +94,24 @@ a {
   color: white;
 }
 
+#sidebar .playlist-create:hover .fa-plus {
+  background-color: white;
+}
+
+#sidebar .playlist-create:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.labels .label-item:hover {
+  color: white;
+}
+
+.app-content-main .card:hover .img-container {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 /* APP TOP */
 
 .app-top {
@@ -163,6 +181,7 @@ a {
 .nav-link-list .nav-link-item {
   text-align: center;
   margin: 1rem 0;
+  border: 2px solid transparent;
 }
 
 /* PLAYLIST */
@@ -279,7 +298,8 @@ a {
 .app-content-main .label-item {
   text-transform: uppercase;
   margin: 0 1rem;
-  line-height: 3rem;
+  line-height: 2rem;
+  font-size: 0.7rem;
 }
 
 .label-item .active {
@@ -459,11 +479,22 @@ a {
 
   #sidebar {
     align-items: flex-start;
-    padding: 1rem 1rem 0.5rem 1rem;
+    padding: 1rem 1rem 0.5rem 0;
+  }
+
+  .logo-container,
+  .playlist-section,
+  .sidebar-lower {
+    padding-left: 1rem;
   }
 
   .nav-link-list .nav-link-item {
     text-align: left;
+    padding-left: 1rem;
+  }
+
+  #sidebar .active {
+    border-left: 2px solid lime;
   }
 
   .sidebar-lower {
