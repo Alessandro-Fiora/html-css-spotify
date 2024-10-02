@@ -226,6 +226,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: end;
+  padding: 1rem;
 }
 
 .app-content-header .upgrade {
@@ -270,12 +271,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  justify-content: space-evenly;
 }
 
 .app-content-main .card {
-  flex-basis: 40%;
-  flex-grow: 1;
+  flex-basis: 45%;
 }
 
 /* CREATED FOR YOU SECTION */
@@ -461,7 +460,7 @@ a {
   /* **************** ---------------- *************************** */
 
   .app-content-main .card {
-    flex-basis: 20%;
+    flex-basis: 23%;
   }
 }
 
@@ -489,6 +488,6 @@ a {
   /* **************** ---------------- *************************** */
 
   .app-content-main .card {
-    flex-basis: 10%;
+    flex-basis: 15%;
   }
 }
