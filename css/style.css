@@ -291,6 +291,8 @@ a {
 #player {
   height: var(--player-height);
 
+  padding: 1rem;
+
   background-color: hsl(0deg 0% 15.69%);
   color: white;
 
@@ -300,6 +302,22 @@ a {
 
 #player .song-data {
   display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+#player .song-img {
+  width: 30px;
+}
+
+.song-data h2 {
+  font-size: 0.7rem;
+}
+
+.song-data h3 {
+  font-size: 0.5rem;
+  color: grey;
 }
 
 #player .player-main {
