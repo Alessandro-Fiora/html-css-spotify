@@ -331,6 +331,13 @@ a {
   border-radius: 2px;
 }
 
+#player .progress {
+  height: 4px;
+  width: 30%;
+  background-color: lime;
+  border-radius: 2px;
+}
+
 /* MEDIA QUERY */
 
 /* SM */
