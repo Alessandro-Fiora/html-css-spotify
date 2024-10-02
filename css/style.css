@@ -107,9 +107,19 @@ a {
   color: white;
 }
 
-.app-content-main .card:hover .img-container {
-  opacity: 0.5;
+.app-content-main .card:hover img {
+  opacity: 0.4;
   cursor: pointer;
+}
+
+.app-content-main .card:hover .play-button {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1;
 }
 
 /* APP TOP */
@@ -327,6 +337,10 @@ a {
   flex-basis: 45%;
 }
 
+.app-content-main .img-container {
+  position: relative;
+}
+
 .app-content-main .card .text-container {
   text-align: center;
   margin-top: 0.5rem;
@@ -394,7 +408,7 @@ a {
   gap: 1rem;
 }
 
-#player .fa-play {
+.fa-play {
   border: 3px solid currentColor;
   border-radius: 50%;
   width: 30px;
