@@ -306,20 +306,33 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
 #player .button-container {
-  /* min-width: 200px; */
+  max-width: 200px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#player .fa-play {
+  border: 3px solid currentColor;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #player .progress-bar-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  width: 100%;
   gap: 1rem;
 }
 
@@ -334,7 +347,7 @@ a {
 #player .progress {
   height: 4px;
   width: 30%;
-  background-color: lime;
+  background-color: white;
   border-radius: 2px;
 }
 
