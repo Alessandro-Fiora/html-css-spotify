@@ -246,23 +246,51 @@ a {
 }
 
 .app-content-main h1,
-.app-content-main h2,
 .app-content-main h3 {
   color: white;
+}
+
+.app-content-main h2 {
+  font-size: 1rem;
+}
+
+.app-content-main h3 {
+  font-size: 0.9rem;
+}
+.app-content-main h4 {
+  font-size: 0.7rem;
 }
 
 .app-content-main section {
   margin: 1rem 0;
 }
 
+.app-content-main .card .song-title {
+  margin-bottom: 0.2rem;
+}
+
 /* LABELS */
 
 .app-content-main .label-list {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .app-content-main .label-item {
   text-transform: uppercase;
+  margin: 0 1rem;
+  line-height: 3rem;
+}
+
+.label-item .active {
+  border: 1px solid lime;
+  width: 30%;
+  position: relative;
+  width: 30%;
+  left: 35%;
+}
+.label-item .inactive {
+  border: 1px solid transparent;
 }
 
 /* RECENTLY PLAYED SECTION */
@@ -271,10 +299,17 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+
+  padding: 1rem 0;
 }
 
 .app-content-main .card {
   flex-basis: 45%;
+}
+
+.app-content-main .card .text-container {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 /* CREATED FOR YOU SECTION */
