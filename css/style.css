@@ -308,7 +308,7 @@ a {
 }
 
 #player .song-img {
-  width: 30px;
+  width: 50px;
 }
 
 .song-data h2 {
@@ -317,6 +317,10 @@ a {
 
 .song-data h3 {
   font-size: 0.5rem;
+  color: grey;
+}
+
+.song-data i {
   color: grey;
 }
 
@@ -367,6 +371,23 @@ a {
   width: 30%;
   background-color: white;
   border-radius: 2px;
+}
+
+#player .audio-controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.audio-controls .progress-bar-container {
+  flex-basis: 40%;
+}
+
+.audio-controls .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 /* MEDIA QUERY */
