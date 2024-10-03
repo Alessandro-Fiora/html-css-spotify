@@ -4,6 +4,7 @@
   --player-height: 100px;
   --sidebar-width: 50px;
   --app-content-header-height: 100px;
+  --accent-color: hsl(83.77deg 100% 59.41%);
 }
 
 /* # RESET */
@@ -130,7 +131,7 @@ a {
 }
 
 #player .progress-bar-container:hover .progress {
-  background-color: lime;
+  background-color: var(--accent-color);
 }
 
 #player .progress-bar-container:hover .progress::after {
@@ -336,7 +337,7 @@ a {
 }
 
 .label-item .active {
-  border: 1px solid lime;
+  border: 1px solid var(--accent-color);
   width: 30%;
   position: relative;
   width: 30%;
@@ -530,7 +531,7 @@ a {
   }
 
   #sidebar .active {
-    border-left: 2px solid lime;
+    border-left: 2px solid var(--accent-color);
   }
 
   .sidebar-lower {
